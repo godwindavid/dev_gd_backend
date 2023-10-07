@@ -22,9 +22,9 @@ const io = new Server(server , {  cors: {
 
 
 server.listen(PORT, (error) => {
-    mongoose.connect(url, {
-        dbName: "gd_dev"
-    }).then(() => console.log("connected Successfully"));
+    // mongoose.connect(url, {
+    //     dbName: "gd_dev"
+    // }).then(() => console.log("connected Successfully"));
     if(!error)
         console.log("Server is Successfully Running, and App is listening on port "+ PORT)
     else 
